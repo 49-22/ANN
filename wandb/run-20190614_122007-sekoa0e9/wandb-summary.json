@@ -1,0 +1,101 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "flatten_1_input",
+                "id": "flatten_1_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    28,
+                    28
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "flatten_1",
+                "id": "flatten_1",
+                "class_name": "Flatten",
+                "output_shape": [
+                    null,
+                    784
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense_1",
+                "id": "dense_1",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    10
+                ],
+                "num_parameters": 7850
+            }
+        ],
+        "edges": [
+            [
+                "flatten_1_input",
+                "flatten_1"
+            ],
+            [
+                "flatten_1",
+                "dense_1"
+            ]
+        ]
+    },
+    "examples": {
+        "width": 28,
+        "height": 28,
+        "count": 36,
+        "_type": "images",
+        "captions": [
+            6,
+            4,
+            7,
+            8,
+            7,
+            8,
+            7,
+            2,
+            1,
+            4,
+            2,
+            0,
+            4,
+            4,
+            2,
+            7,
+            8,
+            4,
+            4,
+            7,
+            4,
+            2,
+            2,
+            2,
+            1,
+            2,
+            7,
+            7,
+            2,
+            0,
+            4,
+            6,
+            2,
+            2,
+            4,
+            7
+        ]
+    },
+    "val_acc": 0.6508,
+    "_runtime": 42.68146085739136,
+    "val_loss": 5.606374998474121,
+    "_timestamp": 1560514849.464755,
+    "acc": 0.6648166666666666,
+    "epoch": 9,
+    "loss": 5.389066747411092,
+    "_step": 9
+}
